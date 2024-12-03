@@ -46,11 +46,11 @@ describe('função fibonacci', () => {
     expect(() => fibonnacci(0)).toThrow("Não existe fibonnacci de número menor ou igual a zero");
   });
   test('Retorna o número fibonacci de 8 igual a 21', () => {
-    expect(fibonacci(8)).toBe(21);
+    expect(fibonnacci(8)).toBe(21);
   });
 
   test('Retorna o número fibonacci de 10 igual a 55', () => {
-    expect(fibonacci(10)).toBe(55);
+    expect(fibonnacci(10)).toBe(55);
   });
 });
 
@@ -75,6 +75,7 @@ describe('função ehPrimo', () => {
     expect(() => ehPrimo(-2)).toThrow(Error);
     expect(() => ehPrimo(-2)).toThrow("Não número primo de número menor ou igual a 1");
   });
+  
   test('verifica que 7 e 11 são números primos', () => {
     expect(ehPrimo( 7)).toBe(true);
     expect(ehPrimo(11)).toBe(true);
